@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Events</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">CommunTie</div>
+
+<div>
+<a href="index.html">Home</a>
+<a href="rides.html">Ride Circles</a>
+<a href="dashboard.html">Dashboard</a>
+</div>
+
+</nav>
+
+<h1 class="page-title">
+AI Event Recommendations
+</h1>
+
+<div style="text-align:center">
+
+<select id="interest">
+
+<option value="gardening">Gardening</option>
+<option value="art">Art</option>
+<option value="fitness">Fitness</option>
+<option value="technology">Technology</option>
+<option value="volunteering">Volunteering</option>
+
+</select>
+
+<button onclick="recommendEvent()" class="btn">
+Find Match
+</button>
+
+<h2 id="result" style="margin-top:20px;"></h2>
+
+</div>
+
+<div class="event">
+<h3>Community Garden Meetup</h3>
+<p>Saturday • 10 AM • Local Park</p>
+</div>
+
+<div class="event">
+<h3>Senior Art Workshop</h3>
+<p>Tuesday • 2 PM • Community Center</p>
+</div>
+
+<footer>
+CommunTie
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
