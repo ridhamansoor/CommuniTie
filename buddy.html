@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CommuniTie | Buddy Finder</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+<div class="logo">
+CommuniTie
+</div>
+
+<div class="nav-links">
+<a href="index.html">🏠 Home</a>
+<a href="events.html">🎟 Events</a>
+<a href="rides.html">🚐 Ride Circles</a>
+<a href="buddy.html">👥 Buddy Finder</a>
+<a href="dashboard.html">📊 Dashboard</a>
+</div>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h1>
+Find Your Community Buddy
+</h1>
+
+<p>
+CommuniTie connects you with nearby residents who share your interests,
+schedule, and accessibility needs so you never attend events alone.
+</p>
+
+</section>
+
+<!-- SEARCH / FILTER -->
+
+<section class="section">
+
+<div class="form-card">
+
+<h2>🔍 Find Compatible Buddies</h2>
+
+<p style="margin-top:10px;color:#6b7280;">
+Select your interests to see AI-matched community connections.
+</p>
+
+<label>Interest</label>
+
+<select id="buddyInterest">
+<option>Gardening</option>
+<option>Art</option>
+<option>Fitness</option>
+<option>Technology</option>
+<option>Volunteering</option>
+</select>
+
+<label>Availability</label>
+
+<select>
+<option>Mornings</option>
+<option>Afternoons</option>
+<option>Evenings</option>
+<option>Weekends</option>
+</select>
+
+<button class="btn" onclick="showBuddies()">
+Find My Buddies
+</button>
+
+</div>
+
+</section>
+
+<!-- RESULTS -->
+
+<section class="section">
+
+<div class="grid" id="buddyResults">
+
+<!-- Buddy 1 -->
+
+<div class="buddy-card">
+
+<div class="icon">👩</div>
+
+<h2>Alice</h2>
+
+<p>Gardening Enthusiast</p>
+
+<p>0.7 miles away</p>
+
+<div class="match">98% Compatibility</div>
+
+<button class="btn">Connect</button>
+
+</div>
+
+<!-- Buddy 2 -->
+
+<div class="buddy-card">
+
+<div class="icon">🎨</div>
+
+<h2>Maya</h2>
+
+<p>Local Artist</p>
+
+<p>1.2 miles away</p>
+
+<div class="match">95% Compatibility</div>
+
+<button class="btn">Connect</button>
+
+</div>
+
+<!-- Buddy 3 -->
+
+<div class="buddy-card">
+
+<div class="icon">🚶</div>
+
+<h2>James</h2>
+
+<p>Walking Group Leader</p>
+
+<p>0.9 miles away</p>
+
+<div class="match">93% Compatibility</div>
+
+<button class="btn">Connect</button>
+
+</div>
+
+<!-- Buddy 4 -->
+
+<div class="buddy-card">
+
+<div class="icon">🤝</div>
+
+<h2>Sarah</h2>
+
+<p>Community Volunteer</p>
+
+<p>1.5 miles away</p>
+
+<div class="match">97% Compatibility</div>
+
+<button class="btn">Connect</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- BENEFITS -->
+
+<section class="section">
+
+<h2 class="page-title">
+Why Buddy Matching Matters
+</h2>
+
+<div class="grid">
+
+<div class="card">
+<h2>👥 Reduce Isolation</h2>
+<p>
+Helps elderly and residents without strong networks find companions.
+</p>
+</div>
+
+<div class="card">
+<h2>🧠 AI Matching</h2>
+<p>
+Matches users based on interests, location, and availability.
+</p>
+</div>
+
+<div class="card">
+<h2>🏙 Community Building</h2>
+<p>
+Strengthens neighborhoods through repeated social interaction.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>CommuniTie</h3>
+
+<p style="margin-top:10px;">
+You’re never alone in your community.
+</p>
+
+</footer>
+
+</body>
+
+</html>

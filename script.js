@@ -1,28 +1,137 @@
-function recommendEvent() {
+function generateMatch(){
 
-const interest =
-document.getElementById("interest").value;
+const interest = document.getElementById("interest").value;
+const availability = document.getElementById("availability").value;
+const transport = document.getElementById("transport").value;
+const accessibility = document.getElementById("accessibility").value;
 
-const result =
-document.getElementById("result");
+const result = document.getElementById("result");
 
-const events = {
+let buddy = "";
+let event = "";
+let score = 0;
 
-gardening:
-"🌱 Community Garden Meetup | Match Score: 96%",
+/* AI MATCH LOGIC */
 
-art:
-"🎨 Senior Art Workshop | Match Score: 92%",
+if(interest === "Gardening"){
+buddy = "Alice • Gardening Enthusiast";
+event = "Community Garden Meetup";
+score = 98;
+}
 
-fitness:
-"🚶 Walking Club | Match Score: 95%",
+else if(interest === "Art"){
+buddy = "Maya • Local Artist";
+event = "Art Workshop";
+score = 95;
+}
 
-technology:
-"💻 AI Learning Session | Match Score: 94%",
+else if(interest === "Fitness"){
+buddy = "James • Walking Leader";
+event = "Morning Walking Club";
+score = 93;
+}
 
-volunteering:
-"🤝 Volunteer Day | Match Score: 98%"
-};
+else if(interest === "Technology"){
+buddy = "Daniel • Tech Mentor";
+event = "AI Learning Session";
+score = 96;
+}
 
-result.innerHTML = events[interest];
+else{
+buddy = "Sarah • Community Volunteer";
+event = "Volunteer Day";
+score = 97;
+}
+
+/* OUTPUT */
+
+result.style.display = "block";
+
+result.innerHTML = `
+<h3>🤖 AI Match Found</h3>
+
+<p><strong>👥 Buddy:</strong> ${buddy}</p>
+<p><strong>🎟 Event:</strong> ${event}</p>
+
+<p><strong>📅 Availability:</strong> ${availability}</p>
+<p><strong>🚌 Transport:</strong> ${transport}</p>
+<p><strong>♿ Accessibility:</strong> ${accessibility}</p>
+
+<p style="margin-top:10px;">
+<strong>Match Confidence:</strong> ${score}%
+</p>
+`;
+}
+
+
+/* =========================
+   BUDDY FINDER AI FILTER
+   ========================= */
+
+function showBuddies(){
+
+const interest = document.getElementById("buddyInterest").value;
+const container = document.getElementById("buddyResults");
+
+let buddies = [];
+
+if(interest === "Gardening"){
+buddies = [
+["Alice","🌱 Gardening","0.7 miles","98%"],
+["Ethan","🌿 Plant Care","1.1 miles","94%"]
+];
+}
+
+else if(interest === "Art"){
+buddies = [
+["Maya","🎨 Artist","1.2 miles","95%"],
+["Liam","🖌 Sketching","0.9 miles","92%"]
+];
+}
+
+else if(interest === "Fitness"){
+buddies = [
+["James","🚶 Walking Club","0.8 miles","93%"],
+["Noah","🏃 Running Group","1.3 miles","91%"]
+];
+}
+
+else if(interest === "Technology"){
+buddies = [
+["Daniel","💻 Tech Mentor","1.0 miles","96%"],
+["Ava","🤖 AI Enthusiast","1.4 miles","94%"]
+];
+}
+
+else{
+buddies = [
+["Sarah","🤝 Volunteer","1.5 miles","97%"],
+["Olivia","🌍 Community Work","1.2 miles","95%"]
+];
+}
+
+/* BUILD UI */
+
+container.innerHTML = "";
+
+buddies.forEach(b => {
+
+container.innerHTML += `
+<div class="buddy-card">
+
+<div class="icon">👤</div>
+
+<h2>${b[0]}</h2>
+
+<p>${b[1]}</p>
+
+<p>${b[2]} away</p>
+
+<div class="match">${b[3]} Compatibility</div>
+
+<button class="btn">Connect</button>
+
+</div>
+`;
+});
 }

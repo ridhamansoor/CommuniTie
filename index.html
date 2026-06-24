@@ -1,55 +1,275 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>CommuniTie</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CommuniTie | Connecting Communities</title>
+
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
 <nav>
 
-<div class="logo">CommuniTie</div>
+<div class="logo">
+CommuniTie
+</div>
 
-<div>
-<a href="events.html">Events</a>
-<a href="rides.html">Ride Circles</a>
-<a href="dashboard.html">Dashboard</a>
+<div class="nav-links">
+<a href="index.html">🏠 Home</a>
+<a href="events.html">🎟 Events</a>
+<a href="rides.html">🚐 Ride Circles</a>
+<a href="buddy.html">👥 Buddy Finder</a>
+<a href="dashboard.html">📊 Dashboard</a>
 </div>
 
 </nav>
 
+<!-- HERO -->
+
 <section class="hero">
 
-<h1>Building Connected Communities for 2040</h1>
+<h1>
+Building Stronger Communities Through AI
+</h1>
 
 <p>
-AI-powered community matching and shared transportation designed for sustainable cities and aging populations.
+CommuniTie helps residents discover meaningful events, connect with
+neighbors who share their interests, and access transportation that
+makes community participation easier than ever.
 </p>
 
-<a href="events.html" class="btn">
-Explore NeighborLink
+<a href="#survey" class="btn">
+Find My Community
 </a>
 
 </section>
 
+<!-- FEATURES -->
+
 <section class="section">
 
-<div class="cards">
+<div class="grid">
 
 <div class="card">
-<h3>AI Matching</h3>
-<p>Personalized community recommendations.</p>
+<h2>❤️ Tell Us What You Love</h2>
+<p>
+CommuniTie uses AI to match you with local events and people
+who share your interests.
+</p>
 </div>
 
 <div class="card">
-<h3>Ride Circles</h3>
-<p>Shared transportation for seniors.</p>
+<h2>📅 Share Your Availability</h2>
+<p>
+We recommend activities that fit your schedule and daily routine.
+</p>
 </div>
 
 <div class="card">
-<h3>Health Score</h3>
-<p>Helping reduce social isolation.</p>
+<h2>♿ Accessibility First</h2>
+<p>
+Transportation and accessibility needs are built into every recommendation.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SURVEY -->
+
+<section class="section" id="survey">
+
+<div class="form-card">
+
+<h2 style="margin-bottom:20px;">
+Find Your Community Match
+</h2>
+
+<label>
+What are you interested in?
+</label>
+
+<select id="interest">
+<option>Gardening</option>
+<option>Art</option>
+<option>Fitness</option>
+<option>Technology</option>
+<option>Volunteering</option>
+</select>
+
+<label>
+When are you available?
+</label>
+
+<select id="availability">
+<option>Mornings</option>
+<option>Afternoons</option>
+<option>Evenings</option>
+<option>Weekends</option>
+</select>
+
+<label>
+Transportation
+</label>
+
+<select id="transport">
+<option>Need Transportation</option>
+<option>Can Walk</option>
+<option>Have Car Access</option>
+<option>Public Transit</option>
+</select>
+
+<label>
+Accessibility Needs
+</label>
+
+<select id="accessibility">
+<option>None</option>
+<option>Wheelchair Accessible</option>
+<option>Voice Assistance Needed</option>
+<option>Large Text Interface</option>
+</select>
+
+<button
+class="btn"
+onclick="generateMatch()">
+Find My Match
+</button>
+
+<div id="result" class="result">
+</div>
+
+</div>
+
+</section>
+
+<!-- MAP -->
+
+<section class="section">
+
+<h2 class="page-title">
+Neighborhood Map
+</h2>
+
+<div class="map">
+
+<div class="pin pin1">
+🎨
+</div>
+
+<div class="pin pin2">
+👥
+</div>
+
+<div class="pin pin3">
+🌱
+</div>
+
+</div>
+
+<div style="text-align:center;margin-top:20px;">
+<p>
+Interactive community map showing nearby events,
+friends, and community opportunities.
+</p>
+</div>
+
+</section>
+
+<!-- HOW IT WORKS -->
+
+<section class="section">
+
+<h2 class="page-title">
+How CommuniTie Works
+</h2>
+
+<div class="grid">
+
+<div class="card">
+
+<h2>1️⃣ Discover</h2>
+
+<p>
+Share your interests, schedule, and accessibility preferences.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>2️⃣ Match</h2>
+
+<p>
+AI finds events and community members that fit your profile.
+</p>
+
+</div>
+
+<div class="card">
+
+<h2>3️⃣ Connect</h2>
+
+<p>
+Attend events, join Ride Circles, and build meaningful local friendships.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- IMPACT -->
+
+<section class="section">
+
+<h2 class="page-title">
+Why It Matters
+</h2>
+
+<div class="grid">
+
+<div class="stat-card">
+
+<div class="stat-number">
+2040
+</div>
+
+<p>
+Designed for the future of sustainable communities.
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">
+AI
+</div>
+
+<p>
+Personalized recommendations for every resident.
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<div class="stat-number">
+100%
+</div>
+
+<p>
+Accessibility-focused community engagement.
+</p>
+
 </div>
 
 </div>
@@ -57,8 +277,18 @@ Explore NeighborLink
 </section>
 
 <footer>
-NeighborLink AI • GirlCon Innovation Challenge
+
+<h3>
+CommuniTie
+</h3>
+
+<p style="margin-top:10px;">
+Connecting People. Strengthening Communities.
+</p>
+
 </footer>
+
 <script src="script.js"></script>
+
 </body>
 </html>
