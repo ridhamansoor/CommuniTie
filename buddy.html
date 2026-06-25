@@ -13,22 +13,27 @@
 
 <!-- NAV -->
 
-<nav>
+<nav class="navbar">
 
-<div class="logo">
-CommuniTie
-</div>
+    <div class="logo">
+        CommuniTie
+    </div>
 
-<div class="nav-links">
-<a href="index.html">🏠 Home</a>
-<a href="events.html">🎟 Events</a>
-<a href="rides.html">🚐 Ride Circles</a>
-<a href="buddy.html">👥 Buddy Finder</a>
-<a href="dashboard.html">📊 Dashboard</a>
-</div>
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="index.html">🏠 Home</a>
+        <a href="events.html">🎟 Events</a>
+        <a href="rides.html">🚐 Ride Circles</a>
+        <a href="buddy.html">👥 Buddy Finder</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+
+    </div>
 
 </nav>
-
 <!-- HERO -->
 
 <section class="hero">
@@ -210,6 +215,7 @@ You’re never alone in your community.
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 
 </html>

@@ -13,19 +13,25 @@
 
 <!-- NAVBAR -->
 
-<nav>
+<nav class="navbar">
 
-<div class="logo">
-CommuniTie
-</div>
+    <div class="logo">
+        CommuniTie
+    </div>
 
-<div class="nav-links">
-<a href="index.html">🏠 Home</a>
-<a href="events.html">🎟 Events</a>
-<a href="rides.html">🚐 Ride Circles</a>
-<a href="buddy.html">👥 Buddy Finder</a>
-<a href="dashboard.html">📊 Dashboard</a>
-</div>
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="index.html">🏠 Home</a>
+        <a href="events.html">🎟 Events</a>
+        <a href="rides.html">🚐 Ride Circles</a>
+        <a href="buddy.html">👥 Buddy Finder</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+
+    </div>
 
 </nav>
 
@@ -290,5 +296,6 @@ Connecting People. Strengthening Communities.
 
 <script src="script.js"></script>
 
+<script src="script.js"></script>
 </body>
 </html>

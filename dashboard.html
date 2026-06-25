@@ -13,20 +13,27 @@
 
 <!-- NAV -->
 
-<nav>
+<nav class="navbar">
 
-<div class="logo">CommuniTie</div>
+    <div class="logo">
+        CommuniTie
+    </div>
 
-<div class="nav-links">
-<a href="index.html">🏠 Home</a>
-<a href="events.html">🎟 Events</a>
-<a href="rides.html">🚐 Ride Circles</a>
-<a href="buddy.html">👥 Buddy Finder</a>
-<a href="dashboard.html">📊 Dashboard</a>
-</div>
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="index.html">🏠 Home</a>
+        <a href="events.html">🎟 Events</a>
+        <a href="rides.html">🚐 Ride Circles</a>
+        <a href="buddy.html">👥 Buddy Finder</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+
+    </div>
 
 </nav>
-
 <!-- HERO -->
 
 <section class="hero">
@@ -109,11 +116,11 @@ Shared Ride Circles significantly reduce single-passenger trips.
 
 <h2 class="page-title">Live Community Activity Map</h2>
 
-<div class="map">
+<div class="map" id="map">
 
-<div class="pin pin1">🎟</div>
-<div class="pin pin2">👥</div>
-<div class="pin pin3">🚐</div>
+  <div class="pin" id="pin1">🎟</div>
+  <div class="pin" id="pin2">👥</div>
+  <div class="pin" id="pin3">🚐</div>
 
 </div>
 
@@ -153,5 +160,6 @@ Shared Ride Circles significantly reduce single-passenger trips.
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

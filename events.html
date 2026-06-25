@@ -12,16 +12,26 @@
 <body>
 
 <!-- NAV -->
-<nav>
-<div class="logo">CommuniTie</div>
+<nav class="navbar">
 
-<div class="nav-links">
-<a href="index.html">🏠 Home</a>
-<a href="events.html">🎟 Events</a>
-<a href="rides.html">🚐 Ride Circles</a>
-<a href="buddy.html">👥 Buddy Finder</a>
-<a href="dashboard.html">📊 Dashboard</a>
-</div>
+    <div class="logo">
+        CommuniTie
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <div class="dropdown-menu" id="dropdownMenu">
+
+        <a href="index.html">🏠 Home</a>
+        <a href="events.html">🎟 Events</a>
+        <a href="rides.html">🚐 Ride Circles</a>
+        <a href="buddy.html">👥 Buddy Finder</a>
+        <a href="dashboard.html">📊 Dashboard</a>
+
+    </div>
+
 </nav>
 
 <!-- HERO -->
@@ -121,5 +131,6 @@ Discover. Connect. Belong.
 
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

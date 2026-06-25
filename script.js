@@ -110,6 +110,9 @@ buddies = [
 ];
 }
 
+
+// update every 3 seconds
+setInterval(updateMap, 3000);
 /* BUILD UI */
 
 container.innerHTML = "";
@@ -132,6 +135,19 @@ container.innerHTML += `
 <button class="btn">Connect</button>
 
 </div>
+
 `;
 });
+
+
+/* IMPORTANT: wait until page loads */
+window.addEventListener("DOMContentLoaded", startLiveMap);
+}
+function toggleMenu(){
+
+    const menu =
+    document.getElementById("dropdownMenu");
+
+    menu.classList.toggle("show");
+
 }
